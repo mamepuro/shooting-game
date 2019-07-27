@@ -30,10 +30,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="Altseed">
+      <HintPath>packages\AltseedDotNet.1.1.5.3\lib\net45\Altseed.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainProgram.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="BoxClass.cs" />
+    <Compile Include="CollidableObject.cs" />
+    <Compile Include="Enermy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\.DS_Store" />
+    <None Include="Resources\Bgm.ogg" />
+    <None Include="Resources\player.png" />
+    <None Include="Resources\box.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\AltseedDotNet.1.1.5.3\build\net45\AltseedDotNet.targets" Condition="Exists('packages\AltseedDotNet.1.1.5.3\build\net45\AltseedDotNet.targets')" />
 </Project>

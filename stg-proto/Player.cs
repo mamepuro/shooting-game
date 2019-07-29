@@ -23,7 +23,7 @@ namespace stgproto
             Radius = Texture.Size.Y / 2.0f;
         }
         //Move method
-        public void Move()
+        protected override void OnUpdate()
         {
 
             if (asd.Engine.Keyboard.GetKeyState(asd.Keys.Up) == asd.KeyState.Hold)

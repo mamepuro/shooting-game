@@ -11,11 +11,8 @@ namespace stgproto
         public static void Main(string[] args)
         {
             asd.Engine.Initialize("Stgproto", 800, 600,new asd.EngineOption());
-            Player player = new Player();
-            Box box = new Box();
-            asd.Engine.AddObject2D(player);
-            asd.Engine.AddObject2D(box);
-
+            TitleScene title = new TitleScene();
+            asd.Engine.ChangeSceneWithTransition(title, new asd.TransitionFade(1.0f, 1.0f));
             while (asd.Engine.DoEvents())
             {
                 
@@ -24,13 +21,16 @@ namespace stgproto
                     break;
                 }
                 
-                player.Move();
+                //player.Move();
 
                 // Altseedを更新する。
                 asd.Engine.Update();
             }
 
-            // Altseedの終了処理をする。
+
+
+
+           // Altseedの終了処理をする。
             asd.Engine.Terminate();
 
 

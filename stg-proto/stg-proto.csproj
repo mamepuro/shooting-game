@@ -41,6 +41,11 @@
     <Compile Include="BoxClass.cs" />
     <Compile Include="CollidableObject.cs" />
     <Compile Include="Enermy.cs" />
+    <Compile Include="EnermyBullet.cs" />
+    <Compile Include="TitleScene.cs" />
+    <Compile Include="GameScene.cs" />
+    <Compile Include="NomalEnermy.cs" />
+    <Compile Include="StraightMoveEnermyBullet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
